@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function add()
+        {
+           localStorage.menu="Vegetarian";
+           localStorage.item="Mushroom rice";
+        }
+        function check()
+        {
+            alert(localStorage.length);
+        }
+        function remove()
+        {
+           //localStorage.removeItem("menu");
+          // localStorage.removeItem("item");
+           localStorage.clear();
+        }
+    
+       </script>
+</head>
+<body>
+    <h3>Local Storage </h3>
+    <br>
+    <input type="button" value="Add Local Storage" onclick="add()">
+    <br><br>
+    <input type="button" value="Check Local Storage" onclick="check()">
+    <br><br>
+    <input type="button" value="Remove Local Storage" onclick="remove()">
+    <br><br>
+</body>
+</html>
